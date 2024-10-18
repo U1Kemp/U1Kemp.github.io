@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utpalraj Kemprai</title>
+  <link rel="icon" type="image/png" href="Logos/my_logo.png"> <!-- Favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+
+  <!-- Include MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      height: 30px; /* Adjust height as needed */
+      margin-right: 10px; /* Optional: Adjust spacing */
+    }
+    .content {
+            font-size: 18px; /* Change this value to your desired font size */
+        }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark custom_navbar">
+    <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-brand mb-0 h1">
+      <!-- <img src="Logos/my_logo.png" alt="Logo" /> Logo in the navbar -->
+      Utpalraj Kemprai
+    </div>
+    <div class="navbar-brand-container">
+      <a href="https://www.linkedin.com/in/utpalraj-kemprai-89245a251/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/U1Kemp" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+      <a href="mailto:utpalraj.mds2023@cmi.ac.in" class="icon-link"><i class="far fa-envelope"></i></a>
+    </div>
+  </nav>
+
+  <div id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+    <ul class="sidebar-menu">
+      <li><a href="index.html" onclick="toggleSidebar()">Home</a></li>
+      <li><a href="CV/resume.pdf" target="_blank" onclick="toggleSidebar()">CV</a></li>
+      <li><a href="publications.html" onclick="toggleSidebar()">Publications</a></li>
+      <li><a href="courses.html" onclick="toggleSidebar()">Courses</a></li>
+      <li><a href="misc.html" onclick="toggleSidebar()">Projects and Certificates</a></li>
+      <li><a href="contact.html" onclick="toggleSidebar()">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="overlay" onclick="toggleSidebar()"></div>
+
+<div class="container-fluid">
+  <div class="content">
+    <h1><b>Project Works and Certifications</b></h1>
+    <!-- <p>Here, I share my works and studies on a diverse array of topics: <a href="#algebraic-complexity-theory">Algebraic Complexity Theory</a>, <a href="#reinforcement-learning">Reinforcement Learning</a>, <a href="#machine-learning">Machine Learning</a>, <a href="#quants-and-finance">Quants and Finance</a>, <a href="#regression">Regression</a>, <a href="#analytic-and-algebraic-number-theory">Analytic and Algebraic Number Theory</a></p>
+    <p>The courses I have taken till now are in my <strong><a href="courses.html">Courses Page</a></strong>.</p> -->
+    
+    <h2><b><u>Projects</u></b></h2>
+    
+    <div class="project">
+      <h4><b><li>Forest Fire Detection using Support Vector Machine (SVM) for Datasets with Features more than Sample Data</b> </h4></li>
+
+      <p> Collected data of forest fire images and forest images from <a href = "https://data.mendeley.com/datasets/gjmr63rz2r/" target="_blank"> Mendeley data</a> and <a href = "https://images.cv/download/forest_fire/948/CALL_FROM_SEARCH/forest_fire" target="_blank"> images.cv</a>
+      </p>
+      <p>
+        Built a SVM model for distinguishing between forest fire images and forest images. And deployed the model on Streamlit. 
+      </p>
+      <p>
+        <a href="https://svmforestfiredetection-jhquezgnd65rr6e7j6qcsj.streamlit.app/" target="_blank">Streamlit App</a>
+      </p>
+    </div>
+
+    <br>
+
+    <div class="project">
+      <h4><b><li>Analytics Dashboard for US Macro-Economic Data (2002-2022) </b></h4></li>
+      <p>
+      Collected US Macro-Economic data from <a href = "https://www.kaggle.com/datasets/sagarvarandekar/macroeconomic-factors-affecting-us-housing-prices" target="_blank"> kaggle</a>.
+      </p>
+      <p>
+        Performed basic EDA on the collected data.
+      </p>
+      <p>
+        Utilized R and Shiny for developing a dashboard, along with libraries such as ggplot2 and plotly.
+      </p>
+      <p><a href="https://4pdji3-utpalraj-kemprai.shinyapps.io/US_Macroeconomic_Data/" target="_blank">Shiny Web App link</a>
+      </p>
+    </div>
+
+    <br>
+
+    <div class="project">
+      <h4><b><li>Availability, Accessibility, and Inequalities of Water, Sanitation, and Hygiene (WASH) Services in Indian Metro Cities</b></h4></li>
+      <p>
+        Did a statistical analysis of water availability and accessibility in Indian Metro Cities in 2004-05 and 2011-12.
+      </p>
+
+      <p>
+        <a href="https://www.isibang.ac.in/~rsen/Stat1/2.pdf" target="_blank"> Project Report </a>
+      </p>
+    </div>
+
+    <br>
+
+    <h2><b><u>Certifications</u></b></h2>
+    
+    <div class="certification">
+      <h4><b><li>Finlatics Business Analyst Experience Program</b></h4></li>
+      <p>Issuing Organization: Finlatics | <a href="Certifications\https___www.finlatics.com_pdfs_bacertificates_128865_certificate.pdf" target="_blank">View Certification</a> |
+      <a href="Certifications\https___www.finlatics.com_pdfs_balor_128865_lor.pdf" target="_blank">Letter of Recommendation</a>
+      </p>
+    </div>
+
+    <br>
+
+    <div class="certification">
+      <h4><b><li>Madhava Mathematics Competition 2022</b></h4></li>
+      <p>Issuing Organization: Dept of Mathematics, S.P. College, Pune and Homi Bhabha Centre for Science Education, TIFR | <a href="Certifications\M_Page_0542.jpg" target="_blank">View Certification</a></p>
+    </div>
+
+    <br>
+
+    <div class="certification">
+      <h4><b> <li>Madhava Mathematics Competition 2021</b></h4></li>
+      <p>Issuing Organization: Dept of Mathematics, S.P. College, Pune and Homi Bhabha Centre for Science Education, TIFR | <a href="Certifications/MMC203831.pdf" target="_blank">View Certification</a></p>
+    </div>
+
+    <br>
+
+    <div class="certification">
+      <h4><b> <li>Assam Mathematics Olympiad 2018</b></h4></li>
+      <p>Issuing Organization: Assam Academy of Mathematics | <a href="Certifications/AMO_Certificate_Merit.jpg" target="_blank">View Certification</a></p>
+    </div>
+
+    <br>
+
+    <div class="certification">
+      <h4><b> <li>Inspire Winter Science Camp 2018</b></h4></li>
+      <p>Issuing Organization: PG Dept. of Life Sciences, D.R. College, Golaghat, Assam | <a href="Certifications/Inspire_Winter_Science_Camp.jpg" target="_blank">View Certification</a></p>
+    </div>
+
+
+    <br>
+
+    <div class="certification">
+      <h4><b><li>Introduction to Julia (for programmers)</b></h4></li>
+      <p>Issuing Organization : Julia Academy | <a href="Certifications\certificate-of-completion-for-introduction-to-julia.pdf" target="_blank">View Certification</a></p>
+    </div>
+    
+    <br>
+
+    <div class="certification">
+      <h4><b> <li>Python Programming : A concise Introduction</b></h4></li>
+      <p>Issuing Organization: Coursera | <a href="Certifications/Coursera_Python.pdf" target="_blank">View Certification</a></p>
+    </div>
+
+  </div>
+</div>
+
+
+<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
+  <i id="dark-mode-icon" class="fas fa-moon"></i>
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

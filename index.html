@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utpalraj Kemprai</title>
+  <link rel="icon" type="image/png" href="Logos/my_logo.png"> <!-- Favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+
+  <!-- Include MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand img {
+      height: 40px; /* Adjust height as needed */
+      margin-right: 10px; /* Optional: Adjust spacing */
+    }
+    .profile-pic {
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      width: 250px; /* Adjust the width as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark custom_navbar">
+    <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-brand mb-0 h1">
+      <!-- <img src="Logos/my_logo.png" alt="Logo" /> Logo in the navbar -->
+      Utpalraj Kemprai
+    </div>
+    <div class="navbar-brand-container">
+      <a href="https://www.linkedin.com/in/utpalraj-kemprai-89245a251/" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/U1Kemp" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+      <a href="mailto:utpalraj.mds2023@cmi.ac.in" class="icon-link"><i class="far fa-envelope"></i></a>
+    </div>
+  </nav>
+
+  <div id="sidebar">
+    <button class="close-btn" onclick="toggleSidebar()"><i class="fas fa-times"></i></button>
+    <ul class="sidebar-menu">
+      <li><a href="index.html" onclick="toggleSidebar()">Home</a></li>
+      <li><a href="CV/resume.pdf" target="_blank" onclick="toggleSidebar()">CV</a></li>
+      <li><a href="publications.html" onclick="toggleSidebar()">Publications</a></li>
+      <li><a href="courses.html" onclick="toggleSidebar()">Courses</a></li>
+      <li><a href="misc.html" onclick="toggleSidebar()">Projects and Certificates</a></li>
+      <li><a href="contact.html" onclick="toggleSidebar()">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="overlay" onclick="toggleSidebar()"></div>
+
+  <div class="container-fluid">
+    <div class="content">
+    <h1>Welcome to my Homepage</h1> <br>
+    <img src="Images/My Image/my_image.jpg" alt="Your Picture" class="profile-pic">
+    <p>I am currently a final year Data Science post graduate student at <a href="https://www.cmi.ac.in" target="_blank">Chennai Mathematical Institute</a>, India. I completed my undergraduate studies in Mathematics from <a href="https://www.isibang.ac.in" target="_blank">Indian Statistical Institute Bangalore,</a> India. I share stuff about what I am learning and doing, on this site.</p>
+
+    <p>
+    I'm passionate about the world of AI and data science! With strong proficiency in Python, R, and Julia, I specialize in leveraging machine learning frameworks like Scikit-Learn, Keras, TensorFlow, and PyTorch to solve complex challenges. My expertise in data manipulation and visualization—using libraries like NumPy, Pandas, Matplotlib, Seaborn, Streamlit, ggplot2, and Plotly—helps me transform data into impactful visual stories.
+    </p>
+
+    <p>
+    My interest in statistics and machine learning drives me to explore innovative solutions and derive meaningful insights from data. I'm well-versed in SQL for effective data management and analysis, and I'm comfortable using MS Excel, Power BI, and R Shiny to deliver actionable business intelligence.
+    </p>
+    
+    <p>
+    During my internship at Accenture as a Data and AI intern, I worked on a Supply Chain Optimization project, where I applied my analytical skills to enhance efficiency and improve decision-making. I'm particularly excited about the applications of AI, machine learning, and statistics in addressing real-world challenges and making a difference.
+    </p>
+
+    </div>
+
+  <div class="content">
+    <div class="about-site">
+      <div class="about-site-content">
+        <h4 class="blue-text">About this website</h4>
+        <p> For this website the <code>MathJax-script</code> is taken from the <code>tex-mml-chtml.js</code> file available <a href="https://cdn.jsdelivr.net/npm/mathjax@3/es5/" target="_blank">here</a>. Some css styles from <code>bootstrap.min.css</code> (4.5.2) have been used. The \( \mathrm{\LaTeX} \) font used is available <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" target="_blank">here</a>. This website's source code is available  <a href="https://github.com/AnkanKar-Zargon/" target="_blank">here</a>. 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container text-center">
+      <span class="text-muted">&copy; 2024 Ankan Kar</span>
+  </div>
+</footer>
+
+<button id="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
+  <i id="dark-mode-icon" class="fas fa-moon"></i>
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
