@@ -7,7 +7,7 @@ function toggleSidebar() {
   
   function toggleDarkMode() {
     var body = document.body;
-    body.classList.toggle("dark-mode");
+    body.classList.toggle("dark-mode");localStorage.setItem("darkMode", body.classList.contains("dark-mode")); // Store dark mode state in local storage
     updateDarkModeButton();
     updateAboutSiteStyle(body.classList.contains("dark-mode")); // Call function to update About Me style
   }
@@ -31,3 +31,13 @@ function toggleSidebar() {
       aboutSite.classList.remove("dark-mode");
     }
   }
+
+  // Check local storage for dark mode state on page load
+document.addEventListener("DOMContentLoaded", function() {
+  var isDarkMode = localStorage.getItem("darkMode");
+  if (isDarkMode === "true") {
+    document.body.classList.add("dark-mode");
+    updateDarkModeButton();
+    updateAboutSiteStyle(true);
+  }
+});
