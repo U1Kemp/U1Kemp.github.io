@@ -223,3 +223,8 @@ body {
     z-index: 999; /* Ensure overlay is beneath sidebar */
     
   }
+
+  .instructor a {
+    color: inherit;
+    text-decoration: none;
+  }
